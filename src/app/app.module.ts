@@ -1,3 +1,4 @@
+import { ItemsComponent } from './home/items/items.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -15,15 +16,26 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatSelectModule} from '@angular/material/select'; 
 import {MatTabsModule} from '@angular/material/tabs'; 
 import {MatCheckboxModule} from '@angular/material/checkbox'; 
+import {MatIconModule} from '@angular/material/icon'; 
+import { MatSliderModule } from '@angular/material/slider';
 
 import {HttpClientModule} from "@angular/common/http"
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HomeComponent } from './home/home.component';
+import { AddItemComponent } from './items/add-item/add-item.component';
+import { UpdateItemComponent } from './items/update-item/update-item.component';
+import { DetailItemComponent } from './items/detail-item/detail-item.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    LoginComponent    
+    LoginComponent,
+    ItemsComponent,
+    HomeComponent,
+    AddItemComponent,
+    UpdateItemComponent,
+    DetailItemComponent    
   ],
   imports: [
     BrowserModule,
@@ -40,7 +52,9 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     ReactiveFormsModule,
     MatSelectModule,
     MatTabsModule,
-    MatCheckboxModule
+    MatCheckboxModule,
+    MatIconModule,
+    MatSliderModule
   ],
   providers: [],
   bootstrap: [AppComponent]

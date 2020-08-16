@@ -24,10 +24,16 @@
               "src/assets"
             ],
             "styles": [
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/jquery/dist/jquery.min.js",
+              "node_modules/bootstrap/dist/js/bootstrap.min.js",
+              "node_modules/popper.js/dist/umd/popper.min.js"
+
+            ]
           },
           "configurations": {
             "production": {
@@ -123,5 +129,8 @@
       }
     }
   },
-  "defaultProject": "latihanjs"
+  "defaultProject": "latihanjs",
+  "cli": {
+    "analytics": "5ea7e10f-4378-49e1-8256-76d56d8eb906"
+  }
 }

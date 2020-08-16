@@ -1,1 +1,113 @@
-<router-outlet></router-outlet>
+<div fxLayout="column">
+    <mat-card>
+    <div fxLayout="row" fxLayoutAlign="center center">
+        <div fxFlex="25">
+            <button mat-button type="button" (click)="items()">Items</button>
+            <button mat-button>Promotions</button>
+            <button mat-button>yourCart</button>
+        </div>
+        <div fxFlex="55" fxLayoutAlign="center center">
+            <button mat-button type="button" (click)="home()" fxLayoutAlign="center end">
+               <font size="50" face="arial">
+                   ZOLARO
+
+               </font>
+            </button>
+
+        </div>
+
+        <div fxFlex="20" fxLayoutAlign="end center">
+            <button mat-icon-button aria-label="Example plus button">
+                <mat-icon>add_shopping_cart</mat-icon>
+              </button>
+
+              <button mat-icon-button aria-label="Example plus button"
+              type="button" (click)="login()">
+                <mat-icon>account_circle</mat-icon>
+              </button>
+
+        </div>
+
+
+    </div>
+    </mat-card>
+
+</div>
+
+<div class="container">
+    <div class="col mt-5">
+        <router-outlet></router-outlet>
+    </div>
+</div>
+
+
+
+     <div class="footer" >
+        <div class="footer-content">
+            <div class="footer-section about">
+                <font size="50" face="arial">
+                    ZOLARO
+ 
+                </font>
+                <p>
+                    ZOLARO is a marketplace website made by Elan Mustakmal 
+                    to ease transaction between sellers and buyers to improve
+                    the experience of online shopping. 
+                </p>
+               
+                <div class="contact">
+                    <span class="phone"><i class="fas fa-phone"></i> &nbsp;1234-5678-9012</span>
+                    <span class="email"><i class="fas fa-envelope mt-0"></i> &nbsp;contact@zolaro.com</span>
+                </div>
+                <div class="socials">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-section link">
+                <h2>Our Outlets</h2>
+                <a href="http://localhost:4200/">- ZOLARO.ID</a> 
+                <a href="http://localhost:4200/">- ZOLARO.US</a>
+                <a href="http://localhost:4200/">- ZOLARO.UK</a>
+                <a href="http://localhost:4200/">- ゾラロ 日本</a>
+                <a href="http://localhost:4200/">- ZOLARO.UAE</a>
+                <a href="http://localhost:4200/">- 졸라로 대한민국</a> 
+            </div>
+
+            <div class="footer-section contact">
+
+                <h2>Contact Us</h2>
+
+                <mat-card>
+                    <mat-form-field >
+                      <mat-label>email</mat-label>
+                      <input matInput>
+                    </mat-form-field>
+                </mat-card>
+                <br>
+                    <mat-card>
+                        <mat-form-field>
+                            <mat-label>message</mat-label>
+                            <textarea matInput></textarea>
+                          </mat-form-field>
+                    </mat-card>
+            </div>
+
+        </div>
+        <div class="footer-bottom">
+            &copy; ZOLARO.com | Designed by Elan Mustakmal
+
+        </div>
+
+    </div>
+
+
+
+
+
+
+    
+
+

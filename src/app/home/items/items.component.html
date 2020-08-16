@@ -1,0 +1,26 @@
+<h1 fxLayoutAlign="center">Items List</h1>
+
+
+
+<div class="row mt-5">
+    <div class="col-md-4 mb-3" *ngFor="let item of items">
+        <div class="card text-black mb-3" style="max-width: 18rem;">
+                <img src="../../assets/img/voila.png" class="card-img-top" alt="...">
+                
+                <div class="card-body">
+                  <button mat-button type="button" (click)="detailItem(item.id)">
+                    <h2 class="card-title">{{item.nama}}</h2>
+
+                  </button> 
+                  <p class="card-text">Rp {{item.harga}}</p>
+                  <p class="card-text">terjual {{item.terjual}}</p>
+                </div>
+                
+              </div>
+    </div>
+</div>
+<h4 class="text-muted">*click on item title to view item details</h4>
+
+<div class="mt-4">
+  <button type="button" class="btn btn-success" (click)="addItem()">Add New Item</button>
+</div>

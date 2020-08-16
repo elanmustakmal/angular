@@ -1,0 +1,23 @@
+<h2>Item Details</h2> 
+
+<div class="card m-3" ngFor="item">
+  <div class="row no-gutters">
+    <div class="col-md-4">
+      <img src="../../assets/img/voila.png" class="card-img">
+    </div>
+    <div class="col-md-7">
+      <div class="card-body">
+        <h3 class="card-title"> Nama Item : {{item.nama}}</h3>
+        <h4 class="card-title"> Stock : {{item.stock}}</h4>
+        <h4 class="card-text">Harga : Rp.{{item.harga}}</h4>
+        <p class="card-text">Deskripsi : {{item.description}}.</p>
+        <h4 class="card-text">Terjual : {{item.terjual}}</h4>
+        <h4 class="card-text">Berat : {{item.berat}}</h4>
+        <div class="card-body">
+          <button type="button" class="btn btn-info" style="width: 100px; height: 50px;" (click)="edit(item.id)">Edit</button>
+          <button type="button" class="btn btn-danger float-right" style="width: 100px; height: 50px;" (click)="delete(item.id)">Delete</button>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>

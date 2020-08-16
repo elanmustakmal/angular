@@ -1,0 +1,69 @@
+.container {
+   min-height: 100%;
+}
+
+.footer{
+    background: #303036;
+    color: #d3d3d3;
+    height: 300px;
+    position: relative;
+    margin-top: 15px;
+}
+
+.footer .footer-content{
+    border: 1px solid red;
+    height: 280px;
+    display: flex;
+}
+
+.footer .footer-content .footer-section{
+    flex: 1;
+    border: 1px solid white;
+    padding: 25px;
+}
+
+.footer .footer-bottom{
+    background: #343a40;
+    color: #686868;
+    height: 50px;
+    width: 100%;
+    text-align: center;
+    position: bottom;
+    bottom: 0px;
+    left: 0px;
+    padding-top: 20px;
+}
+
+.footer .footer-content .about .contact span{
+    display: block;
+    font-size: 1.1em;
+    margin-bottom: 8px;
+}
+
+.footer .footer-content .about .socials a{
+    margin-top: 5px;
+    border: 1px solid gray;
+    width: 41px;
+    height: 38px;
+    padding-top: 8px;
+    margin-right: 5px;
+    text-align: center;
+    display: inline-block;
+    font-size: 1.3em;
+    border-radius: 5px;
+}
+
+.footer .footer-content .about p{
+    margin-top: 5px;
+}
+
+.footer .footer-content .link a{
+    display: block;
+    font-size: 1.1em;
+    margin-bottom: 4px;
+}
+
+.footer .footer-content .footer-section .contact mat-card{
+    width: 20px;
+    height: 50px;
+}
