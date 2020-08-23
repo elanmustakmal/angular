@@ -13,9 +13,12 @@
         <p class="card-text">Deskripsi : {{item.description}}.</p>
         <h4 class="card-text">Terjual : {{item.terjual}}</h4>
         <h4 class="card-text">Berat : {{item.berat}}</h4>
-        <div class="card-body">
-          <button type="button" class="btn btn-info" style="width: 100px; height: 50px;" (click)="edit(item.id)">Edit</button>
-          <button type="button" class="btn btn-danger float-right" style="width: 100px; height: 50px;" (click)="delete(item.id)">Delete</button>
+        <div fxLayout="row" class="card-body">
+          <!-- <button type="button" class="btn btn-info" style="width: 100px; height: 50px;" (click)="edit(item.id)">Edit</button>
+          <button type="button" class="btn btn-danger float-right" style="width: 100px; height: 50px;" (click)="delete(item.id)">Delete</button> -->
+          <button mat-raised-button   color="primary" type="button" class="btnedit" (click)="edit(item.id)">Edit</button>
+          <button mat-raised-button  color="primary" type="button" class="btnBuy" (click)="handleAddToCart()">Add To Cart</button>
+          <button mat-raised-button  fxAlign="end" color="warn" type="button" class="btnDelete" (click)="delete(item.id)">Delete</button>
           </div>
       </div>
     </div>

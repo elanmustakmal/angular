@@ -21,6 +21,9 @@ export class AppComponent {
   login(){
     this.router.navigate(['login'])
   }
+  cart(){
+    this.router.navigate(['buy'])
+  }
 
  
 }

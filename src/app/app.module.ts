@@ -1,3 +1,5 @@
+import { AddKurirComponent } from './items/buy/kurirs/add-kurir/add-kurir.component';
+import { KurirsComponent } from './items/buy/kurirs/kurirs.component';
 import { ItemsComponent } from './home/items/items.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
@@ -25,6 +27,8 @@ import { HomeComponent } from './home/home.component';
 import { AddItemComponent } from './items/add-item/add-item.component';
 import { UpdateItemComponent } from './items/update-item/update-item.component';
 import { DetailItemComponent } from './items/detail-item/detail-item.component';
+import { BuyComponent } from './items/buy/buy.component';
+import { PaymentComponent } from './items/buy/payment/payment.component';
 
 
 @NgModule({
@@ -35,7 +39,11 @@ import { DetailItemComponent } from './items/detail-item/detail-item.component';
     HomeComponent,
     AddItemComponent,
     UpdateItemComponent,
-    DetailItemComponent    
+    DetailItemComponent,
+    BuyComponent,
+    KurirsComponent,
+    PaymentComponent,
+    AddKurirComponent,
   ],
   imports: [
     BrowserModule,

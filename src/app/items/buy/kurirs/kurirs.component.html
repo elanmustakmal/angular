@@ -1,0 +1,25 @@
+<h1 fxLayoutAlign="center">Kurir List</h1>
+
+
+
+<div class="row mt-5">
+    <div class="col-md-4 mb-3" *ngFor="let kurir of kurirs">
+        <div class="card text-black mb-3" style="max-width: 18rem;">
+                <img src="../../assets/img/voila.png" class="card-img-top" alt="...">
+                
+                <div class="card-body">
+                  <button mat-button type="button" (click)="selectKurir(kurir.id)">
+                    <h2 class="card-title">{{kurir.nama}}</h2>
+
+                  </button> 
+                  <p class="card-text">{{kurir.resi}}</p>
+                </div>
+                
+              </div>
+    </div>
+</div>
+<h4 class="text-muted">*click on kurir title to select kurir</h4>
+
+<div class="mt-4">
+  <button type="button" class="btn btn-success" (click)="addKurir()">Add New Kurir</button>
+</div>

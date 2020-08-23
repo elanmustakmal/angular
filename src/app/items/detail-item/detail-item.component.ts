@@ -1,6 +1,7 @@
+import { MessengerService } from './../../messenger.service';
 import { ItemServiceService } from './../../item-service.service';
 import { Item } from './../../item/item';
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
@@ -12,10 +13,12 @@ export class DetailItemComponent implements OnInit {
 
   id:string;
   nama:string;
+  @Input() 
   item: Item;
   constructor(private route:ActivatedRoute, 
     private router:Router,
-    private itemService:ItemServiceService) { }
+    private itemService:ItemServiceService,
+    private msg: MessengerService) { }
 
   ngOnInit(): void {
     this.item = new Item();
@@ -43,6 +46,12 @@ export class DetailItemComponent implements OnInit {
 
   edit(id:string){
     this.router.navigate(['update-item', id])
+  }
+
+  handleAddToCart(){
+    // console.log(this.item)
+    this.msg.sendMsg(this.item)
+    this.router.navigate(['buy'])
   }
 
 }
